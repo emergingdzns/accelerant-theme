@@ -1,13 +1,10 @@
-<?php namespace Pyrocms\AccelerantTheme;
+<?php namespace Emergingdzns\AccelerantTheme;
 
 use Anomaly\Streams\Platform\Addon\Theme\Theme;
 
 /**
  * Class AccelerantTheme
  *
- * @link   http://pyrocms.com/
- * @author PyroCMS, Inc. <support@pyrocms.com>
- * @author Ryan Thompson <ryan@pyrocms.com>
  */
 class AccelerantTheme extends Theme
 {
