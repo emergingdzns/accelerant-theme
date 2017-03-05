@@ -1,27 +1,14 @@
 {
-    "name": "pyrocms/accelerant-theme",
+    "name": "emergingdzns/accelerant-theme",
     "type": "streams-addon",
-    "description": "The official admin theme for PyroCMS.",
+    "description": "The official admin theme fork.",
     "keywords": [
         "cms",
         "addon",
         "theme",
-        "pyrocms",
         "laravel"
     ],
-    "homepage": "http://pyrocms.com/",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "PyroCMS, Inc.",
-            "email": "ryan@pyrocms.com",
-            "homepage": "http://pyrocms.com/",
-            "role": "Owner"
-        }
-    ],
-    "support": {
-        "email": "support@pyrocms.com"
-    },
     "autoload": {
         "psr-4": {
             "Pyrocms\\AccelerantTheme\\": "src/"
