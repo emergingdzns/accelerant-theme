@@ -1,4 +1,4 @@
-<?php namespace Pyrocms\AccelerantTheme\Http\Controller\Admin;
+<?php namespace Emergingdzns\AccelerantTheme\Http\Controller\Admin;
 
 use Anomaly\PreferencesModule\Preference\Contract\PreferenceRepositoryInterface;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
@@ -6,9 +6,6 @@ use Anomaly\Streams\Platform\Http\Controller\AdminController;
 /**
  * Class PreferencesController
  *
- * @link   http://pyrocms.com/
- * @author PyroCMS, Inc. <support@pyrocms.com>
- * @author Ryan Thompson <ryan@pyrocms.com>
  */
 class PreferencesController extends AdminController
 {
@@ -20,6 +17,6 @@ class PreferencesController extends AdminController
      */
     public function navigation(PreferenceRepositoryInterface $preferences)
     {
-        $preferences->set('pyrocms.theme.accelerant::navigation', serialize($this->request->get('navigation')));
+        $preferences->set('emergingdzns.theme.accelerant::navigation', serialize($this->request->get('navigation')));
     }
 }

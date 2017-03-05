@@ -3,9 +3,9 @@
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Anomaly\Streams\Platform\Ui\ControlPanel\Component\Navigation\Event\SortNavigation;
 use Illuminate\Pagination\AbstractPaginator;
-use Pyrocms\AccelerantTheme\Http\Controller\Admin\PreferencesController;
-use Pyrocms\AccelerantTheme\Http\Controller\Admin\SettingsController;
-use Pyrocms\AccelerantTheme\Listener\ApplySorting;
+use Emergingdzns\AccelerantTheme\Http\Controller\Admin\PreferencesController;
+use Emergingdzns\AccelerantTheme\Http\Controller\Admin\SettingsController;
+use Emergingdzns\AccelerantTheme\Listener\ApplySorting;
 
 /**
  * Class AccelerantThemeServiceProvider
@@ -31,8 +31,8 @@ class AccelerantThemeServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $routes = [
-        'admin/settings/themes/pyrocms.theme.accelerant/navigation'    => SettingsController::class . '@navigation',
-        'admin/preferences/themes/pyrocms.theme.accelerant/navigation' => PreferencesController::class . '@navigation',
+        'admin/settings/themes/emergingdzns.theme.accelerant/navigation'    => SettingsController::class . '@navigation',
+        'admin/preferences/themes/emergingdzns.theme.accelerant/navigation' => PreferencesController::class . '@navigation',
     ];
 
     /**

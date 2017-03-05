@@ -1,4 +1,4 @@
-<?php namespace Pyrocms\AccelerantTheme\Listener;
+<?php namespace Emergingdzns\AccelerantTheme\Listener;
 
 use Anomaly\PreferencesModule\Preference\Contract\PreferenceRepositoryInterface;
 use Anomaly\SettingsModule\Setting\Contract\SettingRepositoryInterface;
@@ -7,9 +7,6 @@ use Anomaly\Streams\Platform\Ui\ControlPanel\Component\Navigation\Event\SortNavi
 /**
  * Class ApplySorting
  *
- * @link   http://pyrocms.com/
- * @author PyroCMS, Inc. <support@pyrocms.com>
- * @author Ryan Thompson <ryan@pyrocms.com>
  */
 class ApplySorting
 {
@@ -50,11 +47,11 @@ class ApplySorting
         $builder    = $event->getBuilder();
         $navigation = $builder->getNavigation();
 
-        if ($settings = $this->settings->value('pyrocms.theme.accelerant::navigation')) {
+        if ($settings = $this->settings->value('emergingdzns.theme.accelerant::navigation')) {
             $navigation = array_merge(array_flip(unserialize($settings)), $navigation);
         }
 
-        if ($preferences = $this->preferences->value('pyrocms.theme.accelerant::navigation')) {
+        if ($preferences = $this->preferences->value('emergingdzns.theme.accelerant::navigation')) {
             $navigation = array_merge(array_flip(unserialize($preferences)), $navigation);
         }
 
